@@ -1,0 +1,36 @@
+{
+  "name": "holidays-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Indian public holidays by state/year. Lists central and state holidays, searches by keyword or month, and returns upcoming holidays.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "india",
+    "indian-data",
+    "holiday",
+    "holidays",
+    "festival",
+    "calendar",
+    "public-holiday"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "holidays-mcp": "./server.js"
+  },
+  "files": [
+    "server.js",
+    "lib"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node scripts/test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
